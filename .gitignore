@@ -1,1 +1,5 @@
+# Ignore build artifacts
 src/github.com/nfnt/
+pkg
+# Ignore binary
+resizefoldericon

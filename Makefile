@@ -1,9 +1,9 @@
 GOPATH=`pwd`
 
-all: build
+all: deps build
 
 build:
-	go build -o resizefoldericon src/github.com/ScottESanDiego/resizefoldericon/resizefoldericon.go
+	@GOPATH=$(GOPATH) go build -o resizefoldericon src/github.com/ScottESanDiego/resizefoldericon/resizefoldericon.go
 
 deps:
-	go get github.com/nfnt/resize
+	@GOPATH=$(GOPATH) go get github.com/nfnt/resize
